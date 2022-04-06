@@ -17,7 +17,7 @@ class input {
 		}
 
 		void tofile(){
-			tulis_data.open("../pra_data/input.txt");
+			tulis_data.open("api_data.txt");
 			tulis_data << menu <<endl;
 			tulis_data << jumlah;
 			tulis_data.close();
