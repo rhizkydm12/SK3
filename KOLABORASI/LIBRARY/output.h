@@ -5,14 +5,14 @@ class output {
 		void cetak(){
 			cout << "STRUK PEMBELIAN KELOMPOK JERUK \n";
 			cout << "Yang dibeli : \n";
-			cout<< "Ayam Geprek  -> " << data_file[3];;
-			cout<< "Ayam Goreng  -> " << data_file[4];
-			cout<< "Udang Goreng  -> " << data_file[5];;
-			cout<< "Cumi Bakar  -> " << data_file[6];
-			cout<< "Ayam Bakar  -> " << data_file[7];
-			cout << "Harga total Rp. " << data_file[0] << endl;
-			cout << "Diskon      Rp. " << data_file[1] << endl;
-			cout << "Harga Bayar Rp. " << data_file[2] << endl;
+			cout<< "Ayam Geprek  -> "  << data_file[3]<<endl;
+			cout<< "Ayam Goreng  -> "  << data_file[4]<<endl;
+			cout<< "Udang Goreng  -> " << data_file[5]<<endl;
+			cout<< "Cumi Bakar  -> "   << data_file[6]<<endl;
+			cout<< "Ayam Bakar  -> "   << data_file[7]<<endl;
+			cout << "Harga total Rp. " << data_file[0]<<endl;
+			cout << "Diskon      Rp. " << data_file[1]<<endl;
+			cout << "Harga Bayar Rp. " << data_file[2]<<endl;
 		}
 
 		void getData(){
