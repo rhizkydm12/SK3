@@ -12,18 +12,27 @@ class input {
   			cout<< "3. Udang Goreng\t: Rp. 19000" << endl;
   			cout<< "4. Cumi Bakar\t: Rp. 20000" << endl;
   			cout<< "5. Ayam Bakar\t: Rp. 25000" << endl;
-    		cout<< "Masukkan Pilihan Menu : "; cin >> menu;
-    		cout<< "Jumlah menu yang dipesan : ";cin >> jumlah;
+    		cout<< "Masukkan Pilihan Menu : "<<endl;
+    		cout<< "Ayam Geprek  -> "; cin >> bnyk_aymGp;
+			  cout<< "Ayam Goreng  -> "; cin >> bnyk_aymGr;
+			  cout<< "Udang Goreng  -> "; cin >> bnyk_udgGr;
+			  cout<< "Cumi Bakar  -> "; cin >> bnyk_cmBk;
+			  cout<< "Ayam Bakar  -> "; cin >> bnyk_aymBk;
+			  cout<< "Masukan Jarak Rumah(km) : ";cin>>jarak;
 		}
 
 		void tofile(){
 			tulis_data.open("api_data.txt");
-			tulis_data << menu <<endl;
-			tulis_data << jumlah;
+			tulis_data <<bnyk_aymGp<<endl;
+			tulis_data <<bnyk_aymGr<<endl;
+			tulis_data <<bnyk_udgGr<<endl;
+			tulis_data <<bnyk_cmBk<<endl;
+			tulis_data <<bnyk_aymBk<<endl;
+			tulis_data <<jarak;
 			tulis_data.close();
 		}
 
 	private:
 		ofstream tulis_data;
-		int menu, jumlah; 
+		int bnyk_aymGp,bnyk_aymGr,bnyk_udgGr,bnyk_cmBk,bnyk_aymBk,jarak;
 };
